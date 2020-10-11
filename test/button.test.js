@@ -6,7 +6,7 @@ const expect = chai.expect;
  Vue.config.devtools = false
 
  describe('Button', () => {
-     it('存在.', () => {
+     it('存在..', () => {
          expect(Button).to.be.ok
      })
      it('可以设置icon.', () => {
