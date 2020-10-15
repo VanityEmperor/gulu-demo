@@ -18,12 +18,12 @@ new Vue({
     message: 'hi'
   },
   created(){
-    setTimeout(()=>{
-      let event = new Event('change');
-      let inputElement = this.$el.querySelector('input')
-      inputElement.dispatchEvent(event)
-      console.log('hi')
-    },3000)
+    // setTimeout(()=>{
+    //   let event = new Event('change');
+    //   let inputElement = this.$el.querySelector('input')
+    //   inputElement.dispatchEvent(event)
+    //   console.log('hi')
+    // },3000)
   },
   methods: {
     inputChange (e) {
