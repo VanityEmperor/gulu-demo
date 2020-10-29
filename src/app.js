@@ -36,19 +36,15 @@ new Vue({
     message: 'hi'
   },
   created(){
-    // setTimeout(()=>{
-    //   let event = new Event('change');
-    //   let inputElement = this.$el.querySelector('input')
-    //   inputElement.dispatchEvent(event)
-    //   console.log('hi')
-    // },3000)
+    this.$toast('文字', {
+      enableHtml: false
+    })
   },
   methods: {
     inputChange (e) {
       console.log(e)
     },
     showToast(){
-      this.$toast('我是 message')
     }
   }
 })
