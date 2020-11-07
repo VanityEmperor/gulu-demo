@@ -1,4 +1,4 @@
-# 轱辘 - 一个 Vue UI 组件
+# orange - 一个 Vue UI 组件
 
 [![Build Status](https://www.travis-ci.org/VanityEmperor/gulu-demo.svg?branch=main)](https://www.travis-ci.org/VanityEmperor/gulu-demo)
 
