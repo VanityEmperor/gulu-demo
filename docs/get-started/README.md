@@ -2,55 +2,38 @@
 title: 快速上手
 ---
 
-# 快速上手
-本节将介绍如何在项目中使用 orange-ui。
+本节将介绍如何在项目中使用 oranges-ui。
 
-## 引入 orange-ui
+1.添加 CSS 样式
+使用本框架前，请在 CSS 中开启 border-box
 ```
-import Vue from 'vue'
-import Button from './button'
-import Icon from './icon'
-import ButtonGroup from './button-group'
-import Input from './input'
-import Row from './row'
-import Col from './col'
-import Layout from './layout'
-import Header from './header'
-import Sider from './sider'
-import Content from './content'
-import Footer from './footer'
-import Toast from './toast'
-import plugin from './plugin'
-import Tabs from './tabs'
-import TabsHead from './tabs-head'
-import TabsBody from './tabs-body'
-import TabsItem from './tabs-item'
-import TabsPane from './tabs-pane'
-import Popover from './popover'
-import Collapse from './collapse'
-import CollapseItem from './collapse-item'
+*{box-sizing: border-box;}
 ```
-## 组件注册
+你还需要设置默认颜色等变量（后续会改为 SCSS 变量）
 ```
-Vue.component('g-button', Button)
-Vue.component('g-icon', Icon)
-Vue.component('g-button-group', ButtonGroup)
-Vue.component('g-input', Input)
-Vue.component('g-row', Row)
-Vue.component('g-col', Col)
-Vue.component('g-layout', Layout)
-Vue.component('g-header', Header)
-Vue.component('g-content', Content)
-Vue.component('g-footer', Footer)
-Vue.component('g-sider', Sider)
-Vue.component('g-toast', Toast)
-Vue.use(plugin)
-Vue.component('g-tabs', Tabs)
-Vue.component('g-tabs-head', TabsHead)
-Vue.component('g-tabs-body', TabsBody)
-Vue.component('g-tabs-item', TabsItem)
-Vue.component('g-tabs-pane', TabsPane)
-Vue.component('g-popover', Popover)
-Vue.component('g-collapse', Collapse)
-Vue.component('g-collapse-item', CollapseItem)
+html {
+    --button-height: 32px;
+    --font-size: 14px;
+    --button-bg: white;
+    --button-active-bg: #eee;
+    --border-radius: 4px;
+    --color: #333;
+    --border-color: #999;
+    --border-color-hover: #666;
+}
+```
+IE 15 及以上浏览器都支持此样式。
+2.引入 oranges-ui
+```
+import {Button,Icon,Input} from 'oranges-ui'
+import 'oranges-ui/dist/index.css'
+
+export default {
+    name: 'app',
+    components: {
+        'g-button': Button,
+        'g-icon': Icon,
+        'g-input':Input
+    }
+}
 ```

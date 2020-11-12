@@ -1,4 +1,4 @@
-# orange - 一个 Vue UI 组件
+# oranges-ui 一个 Vue UI 组件
 
 [![Build Status](https://www.travis-ci.org/VanityEmperor/gulu-demo.svg?branch=main)](https://www.travis-ci.org/VanityEmperor/gulu-demo)
 
@@ -6,15 +6,15 @@
 
 ## 开始使用
 1.添加 CSS 样式
-    使用本框架前，请在 CSS 中开启 border-box
-    ```
-    *,*::before,*::after{box-sizing: border-box;}
-    ```
-    IE 8 及以上浏览器都支持此样式。
+使用本框架前，请在 CSS 中开启 border-box
+```
+*{box-sizing: border-box;}
+```
+IE 8 及以上浏览器都支持此样式。
 
-    你还需要设置默认颜色等变量（后续会改为 SCSS 变量）
-    ```
-    html {
+你还需要设置默认颜色等变量（后续会改为 SCSS 变量）
+```
+html {
     --button-height: 32px;
     --font-size: 14px;
     --button-bg: white;
@@ -23,25 +23,25 @@
     --color: #333;
     --border-color: #999;
     --border-color-hover: #666;
-    }
-    ```
-    IE 15 及以上浏览器都支持此样式。
-2.安装 gulu
-    ```
-    npm -i --save gulu-ui-vue-1-1
-    ```
-3.引入gulu
+}
 ```
-    import {Button, ButtonGroup, Icon} from 'gulu-ui-vue-1-1'
-    import 'frank-test-1-1/dist/index.css'
+    IE 15 及以上浏览器都支持此样式。
+2.安装 oranges-ui
+```
+npm install --save oranges-ui
+```
+3.引入 oranges-ui
+```
+import {Button, ButtonGroup, Icon} from 'oranges-ui'
+import 'oranges-ui/dist/index.css'
 
-    export default {
-        name: 'app',
-        components: {
-            'g-button': Button,
-            'g-icon': Icon
-        }
+export default {
+    name: 'app',
+    components: {
+        'g-button': Button,
+        'g-icon': Icon
     }
+}
 ```
 
 ## 文档

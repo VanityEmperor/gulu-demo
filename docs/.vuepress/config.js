@@ -1,6 +1,6 @@
 module.exports = {
-    base: '/orange-ui/',
-    title: 'orange-ui',
+    base: '/oranges-ui/',
+    title: 'oranges-ui',
     description: '一个好用的UI框架',
     themeConfig: {
       nav: [
