@@ -83,10 +83,3 @@ new Vue({
   }
 })
 
-
-
-data () {
-  return {
-    message:'Hello Vue!'     
-  }
-}

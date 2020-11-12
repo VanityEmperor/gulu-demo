@@ -65,12 +65,12 @@
 		}
 	</style>
 	<div id="app" style="padding: 100px;">
-		<g-collapse :selected.sync="selectedTab" single>
+		<!-- <g-collapse :selected.sync="selectedTab" single>
 			<g-collapse-item title="标题1" name="1">内容1</g-collapse-item>
 			<g-collapse-item title="标题2" name="2">内容2</g-collapse-item>
 			<g-collapse-item title="标题3" name="3">内容3</g-collapse-item>
 		</g-collapse>
-		{{selectedTab}}
+		{{selectedTab}} -->
 		<!-- <div style="overflow: hidden; padding-top: 150px; padding-bottom: 40px;">
 			<g-popover position="bottom">
 				<template slot="content" slot-scope="{close}">
@@ -207,7 +207,7 @@
             <p>{{message}}</p>
             <button @click="message+=1">+1</button>
           </div>-->
-		<!-- <div class="box">
+		<div class="box">
 			<g-button :loading="loading1" @click="loading1 = !loading1">
 				按钮
 			</g-button>
@@ -223,7 +223,7 @@
 				<g-button>更多</g-button>
 				<g-button icon="right" icon-position="right">下一页</g-button>
 			</g-button-group>
-		</div> -->
+		</div>
 		<!-- <div id="test"></div> -->
 	</div>
 	<script src="./src/app.js"></script>
